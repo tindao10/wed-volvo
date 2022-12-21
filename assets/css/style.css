@@ -1,0 +1,216 @@
+/*reset css*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*
+1.Làm từ ngoài vào trong
+2.làm từ trên xuống dưới
+3.Tổng quan đến chi tiếng
+*/
+/*
+1.vị trí
+2.Kích thước (chiều rộng: width và chiều cao: height)
+3.Màu sắc
+4.Kiểu chữ
+*/
+.clear{
+    clear: both;
+}
+#main {
+
+}
+#header{
+    height: 64px;
+    background-color:black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+#nav{
+    display: inline-block;
+}
+#nav, .subnav {
+    list-style-type: none;
+
+}
+#nav >li{
+    display: inline-block;
+}
+
+#nav li{
+    position: relative;
+    
+}
+#nav> li> a{
+    color:white;
+}
+#nav li a{
+    text-decoration: none;
+    line-height: 64px;
+    padding: 0 20px;
+    display: block;
+}
+#nav .subnav li:hover a,
+#nav > li:hover > a {
+    color: black;
+    background-color: gray;
+
+}
+#nav li:hover .subnav{
+    display: block;
+}
+#nav .subnav{
+    display: none;
+    position: absolute;
+    top:100%;
+    left: 0;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0 , 0, 0.3) ;
+    
+}
+#nav .subnav a{
+    min-width: 150px;
+    color: black; 
+    padding: 0 12px;
+    line-height: 45px;
+
+}
+.nav-arrow-down{
+    font-size: 12px;
+}
+#header .search-btn{
+    float: right;
+    padding: 0 20px;
+    cursor: pointer;
+}
+#header .search-btn:hover{
+    background-color: #f44336;
+}
+#header .search-icon{
+    color: #fff;
+    font-size: 20px;
+    line-height: 64px;
+}
+#slide{
+    position: relative;
+    margin-top: 64px;
+    padding-top: 50%;
+    background:url('/assets/img/slide/hang-xe-volvo-cua-nuoc-nao-san-xuat-co-tot-khong-gia-ban.webp') bottom center /cover no-repeat;
+    }
+#slide .text-content{
+    position: absolute;
+    color: #fff;
+    bottom: 45px;   
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+#slide .text-heading{
+    font-weight: 500;
+    font-size: 24px;
+
+}
+#slide .text-decription{
+    font-size: 15px;
+    margin-top: 15px;
+
+}
+#content {
+
+}
+#content .content-section{
+    width: 800px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#content .section-heading{
+    font-size: 30px;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 4px;
+}
+#content .section-sub-heading{
+    font-size: 15px;
+    text-align: center;
+    margin-top: 20px;
+    font-style: italic;
+    opacity: 0.7;
+
+}
+#content .about-text{
+    margin-top: 20px;
+    font-size: 15px;
+    text-align: justify;
+    line-height: 1.6;
+
+}
+#content .member-list{
+    margin-top: 48px;
+    overflow: hidden;
+
+}
+#content .member-item{
+    float: left;
+    width: calc(100%/3);
+    text-align: center;
+}
+
+#content .member-name{
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+#conten .member-avatar{
+    margin-top: 15px;
+    width: 154px;
+}
+/*volvo section*/
+.volvo-section{
+    background-color: black ;
+}
+.text-white{
+    color: white !important;
+}
+.product-list{
+    background-color: white;
+    margin-top: 40px;
+}
+.product-list li{
+    list-style: none;
+    color: #757575;
+    font-size: 17px;
+    padding: 11px 16px;
+    border-top: 1px solid#ddd;
+
+}
+.product-list .Soud-out{
+    background-color: #f44336;
+    color: #fff;
+    padding: 3px 4px;
+    margin-left: 20px;
+
+}
+.product-list .quantity{
+    color: white;
+    float:right;
+    width: 24PX;
+    height: 24px;
+    background-color:#757575;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 24px;
+    margin-top: -3px;
+}
+
+#footer {
+
+}
